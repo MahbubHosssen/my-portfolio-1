@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Movie Portal",
+        "image": "https://example.com/movie-portal.png",
+        "languages": [
+            "React",
+            "Tailwind",
+            "Firebase",
+            "MongoDB",
+            "Express"
+        ],
+        "description": "A platform for users to explore and review movies with features like authentication, favorites, and movie ratings."
+    },
+    {
+        "name": "E-Commerce Store",
+        "image": "https://example.com/ecommerce-store.png",
+        "languages": [
+            "React",
+            "Node.js",
+            "Express",
+            "MongoDB",
+            "Stripe"
+        ],
+        "description": "An online store that supports browsing products, adding to cart, and secure payment integration using Stripe."
+    },
+    {
+        "name": "Personal Blog",
+        "image": "https://example.com/personal-blog.png",
+        "languages": [
+            "Next.js",
+            "Tailwind",
+            "Markdown",
+            "Firebase"
+        ],
+        "description": "A minimalistic personal blog platform with dynamic content from markdown files and Firebase for authentication and comments."
+    }
+]
