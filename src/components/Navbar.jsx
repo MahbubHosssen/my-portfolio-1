@@ -64,7 +64,7 @@ const Navbar = ({ isDarkMood, setIsDarkMood }) => {
                 </ul>
 
                 <div className='flex items-center gap-4'>
-                    <img onClick={() => setIsDarkMood(!isDarkMood)} src={isDarkMood ? sunIcon : moonThemeIcon} alt="" className='w-6' />
+                    <img onClick={() => setIsDarkMood(!isDarkMood)} src={isDarkMood ? sunIcon : moonThemeIcon} alt="" className='w-6 cursor-pointer' />
 
                     <Link to='/sample-resume.pdf'
                         target='_blank'

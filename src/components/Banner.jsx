@@ -33,7 +33,9 @@ const Banner = ({isDarkMood}) => {
 
                         <div className='flex gap-3 mt-4 md:mt-0 ml-8 md:ml-4'>
                             <Link to="https://www.linkedin.com/in/mahbub-hossen-6b0136335/" target='_blank'><FaLinkedin className='text-3xl text-[#0A63BC]' /></Link>
+
                             <Link to="https://github.com/MahbubHosssen" target='_blank'><FaGithub className='text-3xl text-[#151413] ' /></Link>
+
                             <Link to='https://api.whatsapp.com/send/?phone=%2B8801629007430&text&type=phone_number&app_absent=0' target='_blank'><FaWhatsapp className='text-3xl text-[#3EBD4E]' /></Link>
                         </div>
                     </div>

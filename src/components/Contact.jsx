@@ -4,7 +4,7 @@ import rightArrowIcon from '../assets/right-arrow-white.png'
 import { FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
-const Contact = () => {
+const Contact = ({isDarkMood}) => {
 
     const [result, setResult] = useState("");
 
@@ -30,24 +30,25 @@ const Contact = () => {
             setResult(data.message);
         }
     };
-
+    // footerBg
     return (
-        <div id='contact' style={{ backgroundImage: `url('${footerBg}')` }} className='w-full px-[12%] py-10 my-12 bg-no-repeat bg-center'>
+        <div id='contact' className={`w-full px-[12%] py-16`}>
             <div>
-                <h4 className='text-center mb-2 text-lg font-Ovo'>Connect With Me</h4>
-                <h2 className='text-center text-5xl font-Ovo'>Get in touch</h2>
-                <p className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>I'd love to here from you! If you have any question, comments or feedback please use the form below.</p>
+                <h4 className='text-center mb-2 text-lg font-Ovo dark:text-white/80'>Connect With Me</h4>
+                <h2 className='text-center text-5xl font-Ovo dark:text-white/80'>Get in touch</h2>
+                <p className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo dark:text-white/80'>I'd love to here from you! If you have any question, comments or feedback please use the form below.</p>
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-12'>
                 <form onSubmit={onSubmit} className='max-w-2xl mx-auto'>
                     <div className='grid grid-cols-2 gap-6  mb-8'>
-                        <input type="text" name='name' placeholder='Enter your name' required className='flex-1 p-3 border-[0.5px] border-gray-400 rounded-md bg-white outline-none' />
-                        <input type="email" name='email' placeholder='Enter your email' required className='flex-1 p-3 border-[0.5px] border-gray-400 rounded-md bg-white outline-none' />
+                        <input type="text" name='name' placeholder='Enter your name' required className='flex-1 p-3 border-[0.5px] border-gray-400 rounded-md bg-white outline-none dark:text-white dark:bg-[#2a004a]/30 dark:border-white/90'/>
+                        <input type="email" name='email' placeholder='Enter your email' required className='flex-1 p-3 border-[0.5px] border-gray-400 rounded-md bg-white outline-none dark:text-white dark:bg-[#2a004a]/30 dark:border-white/90' />
                     </div>
-                    <textarea rows='6' name='message' placeholder='Enter your message' required className='w-full p-4 border-[0.5px] border-gray-400 rounded-md bg-white outline-none mb-6'></textarea>
-                    <button type='submit' className='py-3 px-8 flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500'>Submit Now <img src={rightArrowIcon} alt="" className='w-4' /></button>
+                    <textarea rows='6' name='message' placeholder='Enter your message' required className='w-full p-4 border-[0.5px] border-gray-400 rounded-md bg-white outline-none mb-6 dark:bg-[#2a004a]/30 dark:text-white dark:border-white/90'></textarea>
+
+                    <button type='submit' className='py-3 px-8 flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 dark:bg-[#2a004a] dark:text-white dark:hover:bg-[#11001F]'>Submit Now <img src={rightArrowIcon} alt="" className='w-4' /></button>
                 </form>
-                <div>
+                <div className='dark:text-white/80'>
                     <h4 className='text-lg font-bold'>Address</h4>
                     <p>Dhaka, Bangladesh - 1211</p>
                     <h4 className='text-lg font-bold mt-4'>Email</h4>

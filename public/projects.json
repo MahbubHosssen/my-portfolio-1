@@ -1,7 +1,11 @@
 [
     {
-        "name": "Movie Portal",
-        "image": "https://example.com/movie-portal.png",
+        "id": 1,
+        "name": "CinemaVibe",
+        "image": "https://i.ibb.co.com/xYFjKfM/movie.png",
+        "live": "https://assignments-633bc.web.app/",
+        "github_client": "https://github.com/programming-hero-web-course2/b10-a10-client-side-MahbubHosssen",
+        "github_server": "https://classroom.github.com/a/4UN8ugSF",
         "languages": [
             "React",
             "Tailwind",
@@ -9,29 +13,92 @@
             "MongoDB",
             "Express"
         ],
-        "description": "A platform for users to explore and review movies with features like authentication, favorites, and movie ratings."
+        "description": "A platform for users to explore and review movies with features like authentication, favorites, and movie ratings.",
+        
+        "feature": [
+            "Routing Setup with React Router: The code utilizes createBrowserRouter from React Router to define multiple routes, including paths for the home page, all movies, movie details, user login, registration, and a private route for managing movie additions and favorites.",
+
+            "Private Route Handling The PrivateRoute component ensures that certain pages (like adding movies, viewing favorites, and updating movies) are accessible only to authenticated users. If the user isn't logged in, they are redirected to the login page.",
+
+            "Search Functionality The AllMovies page includes a search bar that allows users to filter movies by title or category. As the user types in the search input, the displayed movie data",
+
+            "User-Specific Favorite Movies: On the MyFavorites page, authenticated users can view their favorite movies, which are fetched from the backend based on their email. The list of favorite movies is displayed using CardMovie, with options to delete favorites.",
+
+            "Update Movie: Users can update movie details such as title, poster, duration, genre, year, and description. The changes are submitted through a PATCH request."
+        ]
     },
     {
-        "name": "E-Commerce Store",
-        "image": "https://example.com/ecommerce-store.png",
+        "id": 2,
+        "name": "Review System",
+        "image": "https://i.ibb.co.com/WPh2sRH/review.png",
+        "live": "https://reviewsystem-dfd5c.web.app/",
+        "github_client": "https://github.com/programming-hero-web-course2/b10a11-client-side-MahbubHosssen",
+        "github_server": "https://github.com/programming-hero-web-course2/b10a11-server-side-MahbubHosssen",
         "languages": [
             "React",
             "Node.js",
             "Express",
-            "MongoDB",
-            "Stripe"
+            "MongoDB"
         ],
-        "description": "An online store that supports browsing products, adding to cart, and secure payment integration using Stripe."
+        "description": "An online store that supports browsing products, adding to cart, and secure payment integration using Stripe.",
+        "feature": [
+            "JWT Authentication: Secure user authentication with JSON Web Tokens.",
+
+            "Cookie-Based Authentication: Uses cookies for managing session tokens with httpOnly and secure settings.",
+
+            "Protected Routes: Sensitive operations like posting and editing services/reviews are protected with token-based middleware.",
+
+            "Add Services: Allows authorized users to add new services.",
+
+            "Retrieve all services or filter by category.",
+
+            "Update Services: Edit service details using a PUT request.",
+
+            "Delete Services: Remove specific services securely.",
+
+            "Add Reviews: Users can submit reviews for services.",
+
+            "Middleware Validation: Protect routes with verifyToken middleware to ensure only authorized users can access sensitive endpoints.",
+
+            "Environment Variables: Store sensitive credentials like database user and password in .env.",
+
+            "CORS Configuration: Restrict origins to trusted domains with cross-origin credentials enabled."
+        ]
     },
     {
-        "name": "Personal Blog",
-        "image": "https://example.com/personal-blog.png",
+        "id": 3,
+        "name": "Adventure Blog",
+        "image": "https://i.ibb.co.com/mzsD3LH/adventure.png",
+        "live": "https://adventure-blog-as9.web.app/",
+        "github_client": "https://github.com/programming-hero-web-course1/b10-a9-authentication-MahbubHosssen",
         "languages": [
-            "Next.js",
-            "Tailwind",
-            "Markdown",
+            "React",
+            "tailwind",
             "Firebase"
         ],
-        "description": "A minimalistic personal blog platform with dynamic content from markdown files and Firebase for authentication and comments."
+        "description": "An online store that supports browsing products, adding to cart, and secure payment integration using Stripe.",
+        "feature": [
+            "JWT Authentication: Secure user authentication with JSON Web Tokens.",
+
+            "Cookie-Based Authentication: Uses cookies for managing session tokens with httpOnly and secure settings.",
+
+            "Protected Routes: Sensitive operations like posting and editing services/reviews are protected with token-based middleware.",
+
+            "Add Services: Allows authorized users to add new services.",
+
+            "Retrieve all services or filter by category.",
+
+            "Update Services: Edit service details using a PUT request.",
+
+            "Delete Services: Remove specific services securely.",
+
+            "Add Reviews: Users can submit reviews for services.",
+
+            "Middleware Validation: Protect routes with verifyToken middleware to ensure only authorized users can access sensitive endpoints.",
+
+            "Environment Variables: Store sensitive credentials like database user and password in .env.",
+
+            "CORS Configuration: Restrict origins to trusted domains with cross-origin credentials enabled."
+        ]
     }
 ]
